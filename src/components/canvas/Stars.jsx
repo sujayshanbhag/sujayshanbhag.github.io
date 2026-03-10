@@ -14,7 +14,7 @@ const StyledCanvasWrapper = styled.div`
 const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
+    random.inSphere(new Float32Array(5000), { radius: 1.2 }),
   );
 
   useFrame((state, delta) => {
@@ -40,7 +40,11 @@ const Stars = (props) => {
 const StyledStarsCanvas = () => {
   return (
     <StyledCanvasWrapper>
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas
+        camera={{ position: [0, 0, 1] }}
+        dpr={[1, 1.5]}
+        gl={{ antialias: false, powerPreference: "low-power" }}
+      >
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
