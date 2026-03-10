@@ -1,6 +1,6 @@
 {
-  "homepage": "https://sujayshanbhag.github.io/portfolio",
-  "name": "3d-portfolio-website",
+  "homepage": "https://shanbhag.dev",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
