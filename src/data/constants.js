@@ -1,14 +1,11 @@
 export const Bio = {
   name: "Sujay Shanbhag",
-  roles: [
-    "Full Stack Developer",
-    "Android Developer",
-    "Competitive Programmer",
-  ],
+  roles: ["Full Stack Developer"],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/SujayShanbhag",
-  resume: "https://drive.google.com/file/d/1lI5OESWw2ThqCMMm3csFCdC-woi8_bIo/view?usp=drive_link",
+  resume:
+    "https://drive.google.com/file/d/1lI5OESWw2ThqCMMm3csFCdC-woi8_bIo/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/sujay-shanbhag-94b936249",
   twitter: "https://twitter.com/sujay_shanbhag",
   insta: "https://www.instagram.com/sujay_shanbhag/",
@@ -25,19 +22,13 @@ export const skills = [
       },
       {
         name: "Recoil",
-        image:
-          "https://cdn.worldvectorlogo.com/logos/recoil-js.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/recoil-js.svg",
       },
       {
         name: "Next Js",
         image:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
       },
-      // {
-      //   name: "Angular Js",
-      //   image:
-      //     "https://camo.githubusercontent.com/8886130b3d8aba95dbdd7c4f9a41029606424cc06d1873c1ced87dd55a222fef/68747470733a2f2f616e67756c61722e696f2f6173736574732f696d616765732f6c6f676f732f616e67756c61722f616e67756c61722e737667",
-      // },
       {
         name: "HTML",
         image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
@@ -45,12 +36,12 @@ export const skills = [
       {
         name: "CSS",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg",
       },
       {
         name: "JavaScript",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
       },
       {
         name: "Bootstrap",
@@ -69,17 +60,16 @@ export const skills = [
     skills: [
       {
         name: "Spring boot",
-        image:
-          "https://www.svgrepo.com/show/376350/spring.svg",
+        image: "https://www.svgrepo.com/show/376350/spring.svg",
       },
       {
         name: "Node Js",
-        image: "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
       },
       {
         name: "Zod",
-        image:
-          "https://bestofjs.org/logos/zod.dark.svg",
+        image: "https://bestofjs.org/logos/zod.dark.svg",
       },
       {
         name: "Express Js",
@@ -90,7 +80,6 @@ export const skills = [
         name: "Graph Ql",
         image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
       },
-
       {
         name: "MySQL",
         image:
@@ -104,6 +93,39 @@ export const skills = [
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+      },
+    ],
+  },
+  {
+    title: "DevOps",
+    skills: [
+      {
+        name: "Docker",
+        image: "https://www.svgrepo.com/show/331370/docker.svg",
+      },
+      {
+        name: "Kubernetes",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg",
+      },
+      {
+        name: "GitHub Actions",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg",
+      },
+      {
+        name: "Jenkins",
+        image: "https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg",
+      },
+      {
+        name: "Linux",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+      },
+      {
+        name: "AWS",
+        image:
+          "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg",
       },
     ],
   },
@@ -143,7 +165,7 @@ export const skills = [
       {
         name: "Tenserflow",
         image:
-          "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg",
       },
       {
         name: "Keras",
@@ -152,8 +174,8 @@ export const skills = [
       },
       {
         name: "Sk Learn Kit",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png",
+        image: 
+        "https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg",
       },
     ],
   },
@@ -188,7 +210,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg",
       },
     ],
   },
@@ -197,51 +219,40 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C560BAQGkR5iMqLIDzw/company-logo_200_200/0/1642884453374?e=1726704000&v=beta&t=W-DfFl8BxvWTI5rnvLKVG1l1LHl8HaH6cXF6vcEsGqE",
-    role: "Frontend Engineer Intern",
+    img: "true-dimensions.jpeg",
+    role: "Intern",
     company: "True Dimensions",
     date: "July 2023 - Aug 2023",
     desc: "Enhanced User experience by developing product pages that showcase an interactive 3D model of the products. Used Reactjs and threejs for creating webpages and streamlined the process of positioning 3D objects in space using GUI libraries like Leva.",
-    skills: [
-      "ReactJS",
-      "Material UI",
-      "ThreeJS",
-      "Leva",
-      "CSS",
-      "JavaScript",
-    ],
+    skills: ["ReactJS", "Material UI", "ThreeJS", "Leva", "CSS", "JavaScript"],
     doc: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Screenshot%20from%202024-01-25%2022-38-31.png?alt=media&token=2785903f-1a4e-41f5-afd2-6adcfe56d058",
   },
   {
     id: 1,
-    img: "https://media.licdn.com/dms/image/C510BAQFwBvGQK2NyEA/company-logo_200_200/0/1630620434106/societe_generale_global_solution_centre_logo?e=1726704000&v=beta&t=lmcSe-HieYzIqNPoK3g_28Ej2CHZ3BIEgIinkm2qrDw",
-    role: "Fullstack Developer Intern",
+    img: "societe_generale.jpeg",
+    role: "Intern",
     company: "Societe Generale",
     date: "Feb 2024 - Aug 2024",
-    desc: "I developed a graphically intuitive application dashboard aimed at reducing communication overhead for over 200 employees. By leveraging Spring Boot, I created robust REST APIs for the backend, while utilizing React.js to design a highly interactive and user-friendly frontend. This comprehensive approach significantly improved communication efficiency and streamlined operations across the organization.",
-    skills: [
-      "Spring boot",
-      "React",
-      "Bootstrap",
-      "JavaScript",
-      "TypeScript",
-    ],
+    desc: "Contributed to test automation, query optimization, code quality initiatives, and feature support across UI and API components.",
+    skills: ["Spring boot", "React", "Bootstrap", "JavaScript", "TypeScript"],
     doc: "https://drive.google.com/file/d/1fJQUUpa6yopjXPzShLxcgr0lZ1jsnP09/view?usp=sharing",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Open Source Contributor ",
-    company: "",
-    date: "Sep 2023 - Present",
-    desc: "Contributed to different open-source projects",
+    img: "societe_generale.jpeg",
+    role: "Software Engineer",
+    company: "Societe Generale",
+    date: "Sep 2024 - Present",
+    desc: "Contributed across UI and API development, database design, performance optimization, load testing, CI/CD workflows, authentication integration, and production support within a microservices-based application.",
+    skills: ["Spring boot", "React", "Angular", "Node", "PLSQL"],
+    doc: "https://drive.google.com/file/d/1fJQUUpa6yopjXPzShLxcgr0lZ1jsnP09/view?usp=sharing",
   },
 ];
 
 export const education = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/C560BAQHnHRVP80_K3w/company-logo_200_200/0/1630666543895?e=1726704000&v=beta&t=XP0SIkeFi1VEmWbl0PM9NM7C6FYsK3elsuPprbyJu8s",
+    img: "sdmcet.png",
     school: "SDM College of Engineering and Technology, Dharwad.",
     date: "Dec 2020 - Apr 2024",
     grade: "8.74 CGPA",
@@ -257,7 +268,8 @@ export const projects = [
     date: "Jan 2024 - Dec 2023",
     description:
       "A social media application that lets users can follow others, post tweets, images, comments, likes and get user recommendations.",
-    image: "https://github.com/SujayShanbhag/twitter-clone/assets/127194126/9f3c3e9b-a204-41ad-927d-c678bc1793f1",
+    image:
+      "https://github.com/SujayShanbhag/twitter-clone/assets/127194126/9f3c3e9b-a204-41ad-927d-c678bc1793f1",
     tags: [
       "React Js",
       "PostgressSQL",
@@ -277,7 +289,8 @@ export const projects = [
     date: "Dec 2021 - Apr 2022",
     description:
       "An “Expense Tracking App”. Keep track of your monthly expenses and compare them to your monthly income with the budget planner.",
-    image: "https://github.com/SujayShanbhag/Coin-Charm/assets/127194126/3c912f56-9aec-4e72-81a4-e6c37ac9c765",
+    image:
+      "https://github.com/SujayShanbhag/Coin-Charm/assets/127194126/3c912f56-9aec-4e72-81a4-e6c37ac9c765",
     tags: ["Kotlin", "MVVM", "Firestore Database", "Firebase Auth API"],
     category: "android app",
     github: "https://github.com/SujayShanbhag/Coin-Charm",
@@ -301,7 +314,7 @@ export const projects = [
     description:
       " A Notes Application made with React JS, Recoil, and Material UI. It has a sidebar where users view and create notes.",
     image:
-      "https://camo.githubusercontent.com/84ac6ab6f378348ef28d8184062b7e9e3511a1252ae3966eaa49e8e998f732a7/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
+      "https://play-lh.googleusercontent.com/vSNQds6F5roxdN4-a16JnQ9dWQVSZZ8OH4-iMAcNLaFQd3ItZWU8rOPOql4Ew5Hh1esX",
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "web app",
     github: "https://github.com/SujayShanbhag/NotesKeeper",
@@ -310,7 +323,8 @@ export const projects = [
     id: 4,
     title: "Image colorization",
     date: "Jan 2021",
-    description: "A CNN model that converts black-and-white images to colored images using Python and Tensorflow.",
+    description:
+      "A CNN model that converts black-and-white images to colored images using Python and Tensorflow.",
     image:
       "https://pyimagesearch.com/wp-content/uploads/2019/02/bw_colorization_opencv_robin_williams.jpg",
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
@@ -318,14 +332,15 @@ export const projects = [
     github: "https://github.com/SujaySHanbhag/ImageColorization",
   },
   {
-    "id": 5,
-    "title": "Cat vs Dog Detector",
-    "date": "June 2023",
-    "description": "A CNN model that classifies images as either cats or dogs using Python and TensorFlow.",
-    "image": "https://kikaben.com/object-detection-vs-image-classification/images/dog-cat-detection.png",
-    "tags": ["Python", "Keras", "TensorFlow", "CNN", "Image Classification"],
-    "category": "machine learning",
-    "github": "https://github.com/SujaySHanbhag/CatVDog",
-  }
+    id: 5,
+    title: "Cat vs Dog Detector",
+    date: "June 2023",
+    description:
+      "A CNN model that classifies images as either cats or dogs using Python and TensorFlow.",
+    image:
+      "https://projects-static.raspberrypi.org/projects/cats-vs-dogs/9566d91402d519b96cc18745cf21b2fafa5b1a7c/en/images/banner.png",
+    tags: ["Python", "Keras", "TensorFlow", "CNN", "Image Classification"],
+    category: "machine learning",
+    github: "https://github.com/SujaySHanbhag/CatVDog",
+  },
 ];
-
