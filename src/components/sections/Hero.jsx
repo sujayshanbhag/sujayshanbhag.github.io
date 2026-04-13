@@ -1,4 +1,4 @@
-import styled, { keyframes, createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Bio, LATEST_PROJECT_URL } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../images/hero.jpeg";
