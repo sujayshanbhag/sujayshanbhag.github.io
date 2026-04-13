@@ -174,8 +174,8 @@ export const skills = [
       },
       {
         name: "Sk Learn Kit",
-        image: 
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/scikitlearn/scikitlearn-original.svg",
       },
     ],
   },
@@ -263,6 +263,18 @@ export const education = [
 
 export const projects = [
   {
+    id: 6,
+    title: "Tinyflix",
+    date: "Apr 2026",
+    description:
+      "A video streaming application that lets user upload their videos and also stream videos in 360p, 480p and 1080p resolution.",
+    image:
+      "https://cdn.mos.cms.futurecdn.net/2tXwuC5mNUk3QmhLMNLLrU-970-80.jpg.webp",
+    tags: ["Node Js", "Express Js", "API", "Streaming"],
+    category: "web app",
+    github: "https://github.com/SujayShanbhag/streamer-api",
+  },
+  {
     id: 0,
     title: "Flyers",
     date: "Jan 2024 - Dec 2023",
@@ -344,3 +356,5 @@ export const projects = [
     github: "https://github.com/SujaySHanbhag/CatVDog",
   },
 ];
+
+export const LATEST_PROJECT_URL = "https://tinyflix.shanbhag.dev";

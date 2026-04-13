@@ -1,8 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { Bio } from "../../data/constants";
+import styled, { keyframes, createGlobalStyle } from "styled-components";
+import { Bio, LATEST_PROJECT_URL } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImage.jpg";
+import HeroImg from "../../images/hero.jpeg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -17,11 +16,11 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 30px 30px 80px;
   z-index: 1;
 
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    padding: 58px 16px 66px;
   }
 
   @media (max-width: 640px) {
@@ -30,6 +29,7 @@ const HeroContainer = styled.div`
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
+
 const HeroInnerContainer = styled.div`
   position: relative;
   display: flex;
@@ -42,6 +42,7 @@ const HeroInnerContainer = styled.div`
     flex-direction: column;
   }
 `;
+
 const HeroLeftContainer = styled.div`
   width: 100%;
   order: 1;
@@ -54,6 +55,7 @@ const HeroLeftContainer = styled.div`
     align-items: center;
   }
 `;
+
 const HeroRightContainer = styled.div`
   width: 100%;
   order: 2;
@@ -135,12 +137,13 @@ const ResumeButton = styled.a`
   -moz-appearance: button;
   appearance: button;
   text-decoration: none;
-
-  width: 45%;
+  width: 35%;
   max-width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 16px 0;
-
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(
     225deg,
@@ -157,24 +160,120 @@ const ResumeButton = styled.a`
     hsla(271, 100%, 50%, 1) 0%,
     hsla(294, 100%, 50%, 1) 100%
   );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  box-shadow:
+    20px 20px 60px #1f2634,
+    -20px -20px 60px #1f2634;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.1;
+  color: white;
 
-     &:hover {
-        transform: scale(1.05);
+  &:hover {
+    transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
+    box-shadow: 20px 20px 60px #1f2634;
     filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
-    color: white;
+  }
+
+  @media (max-width: 640px) {
+    padding: 14px 0;
+    font-size: 18px;
+  }
+`;
+
+const BorderAnimGlobal = createGlobalStyle`
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+    @keyframes spinAngle {
+      from { --angle: 0deg; }
+      to   { --angle: 360deg; }
+    }
+  `;
+
+/* Wrapper carries the rainbow conic border via padding */
+const GlowingButtonWrapper = styled.div`
+  position: relative;
+  display: inline-flex;
+  border-radius: 50px;
+  padding: 3px;
+  width: 45%;
+  max-width: 300px;
+  background-image: conic-gradient(
+    from var(--angle),
+    hsla(282, 100%, 50%, 1) 0deg 288deg,
+    #ffffff 288deg 360deg
+  );
+  animation: 3s spinAngle linear infinite;
+  transition:
+    transform 0.2s ease,
+    filter 0.15s ease;
+
+  /* Glow behind */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 50px;
+    background-image: conic-gradient(
+      from var(--angle),
+      hsla(282, 100%, 50%, 1) 0deg 288deg,
+      #ffffff 288deg 360deg
+    );
+    animation: 3s spinAngle linear infinite;
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &:hover {
+    transform: scale(1.04) translateY(-2px);
+  }
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
+`;
+
+/* Inner anchor — solid purple fill, sits inside the 3px rainbow padding */
+const GlowingButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 14px 0;
+  color: white;
+  border-radius: 47px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+
+  @media (max-width: 640px) {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+`;
+
+const ButtonsRow = styled.div`
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: -8px;
+  margin-bottom: 18px;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
 `;
 
 const Img = styled.img`
@@ -218,6 +317,7 @@ const HeroBg = styled.div`
 const Hero = () => {
   return (
     <div id="About">
+      <BorderAnimGlobal />
       <HeroContainer>
         <HeroBg>
           <StarCanvas />
@@ -249,10 +349,18 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
-                Resume
-              </ResumeButton>
+              <ButtonsRow>
+                <GlowingButtonWrapper>
+                  <GlowingButton href={LATEST_PROJECT_URL} target="_blank">
+                    Visit my latest project
+                  </GlowingButton>
+                </GlowingButtonWrapper>
+                <ResumeButton href={Bio.resume} target="_blank">
+                  Resume
+                </ResumeButton>
+              </ButtonsRow>
             </HeroLeftContainer>
+
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
