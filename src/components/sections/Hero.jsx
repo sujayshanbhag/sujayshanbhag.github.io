@@ -179,6 +179,8 @@ const ResumeButton = styled.a`
   @media (max-width: 640px) {
     padding: 14px 0;
     font-size: 18px;
+    width: 100%;
+    max-width: 100%;
   }
 `;
 
@@ -236,6 +238,11 @@ const GlowingButtonWrapper = styled.div`
   @media (max-width: 960px) {
     margin-left: 0;
   }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `;
 
 /* Inner anchor — solid purple fill, sits inside the 3px rainbow padding */
@@ -274,6 +281,11 @@ const ButtonsRow = styled.div`
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 `;
 
 const Img = styled.img`
